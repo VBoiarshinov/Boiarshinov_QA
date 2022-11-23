@@ -39,7 +39,7 @@ public class First_Test {
         new Select(driver.findElement(By.id("card-expires-year"))).selectByVisibleText("2028");
         driver.findElement(By.id("input-card-cvc")).click();
         driver.findElement(By.id("input-card-cvc")).clear();
-        driver.findElement(By.id("input-card-cvc")).sendKeys("436");
+        driver.findElement(By.id("input-card-cvc")).sendKeys("123");
         driver.findElement(By.id("action-submit")).click();
         assertEquals("Confirmed", driver.findElement(By.xpath("//div[@id='payment-item-status']/div[2]")).getText());
     }
