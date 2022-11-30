@@ -1,0 +1,41 @@
+#/!bin/bash  <!--Работает-->
+
+options=(  <!--Задается список опций, которые можно использовать-->
+	'1'
+	"2"
+	'3'
+	'4'
+	'5'
+)
+echo 'Please choose an option' <!--Появляется стартовое сообщение 'Please choose an option' с опциями 1-5-->
+select input in "${options[@]}"; do  <!--Задается входное значение, вместо @ подставляется то, что мы выбирем 1-5-->
+	case "$input" in  <!--Выбрав значение строкой выше 1-5 мы получим:-->
+		"${options[0]}") <!--Нажав 1. Получим ветку, где мы находимся-->
+			ls
+			;;
+		"${options[1]}")  <!--Нажав 2. Получим время и дату-->
+			date $'+Time: %T\nDate: %D'
+			;;
+		"${options[2]}")  <!--Нажав 3-->
+			read -p 'What file do you wish to check? ' finput  <!--Получим сообщение - What file do you wish to check?-->
+			if [[ -d $finput ]]; then  <!--Проверка директории-->
+				format='%s is a directory.\n'  <!--Покажет директорию-->
+			elif [[ -f $finput ]]; then  <!--Проверка файла в этой директории-->
+				format='%s is a file.\n'  <!--Скажет, что этот файл есть (jarfix.exe is a file.) если он там есть-->
+			else  <!--Если данные введены не правильно-->
+				format='%s does not exist.\n'  <!--Появится сообщение does not exist-->
+			fi  <!--Завершение предыдущего запроса-->
+			printf "$format" "$finput"  <!--$format - строка форматирования (formatstring) входных данных-->
+			;;
+		"${options[3]}")  <!--Нажав 4-->
+			read -p 'Please enter filename: ' binput  <!--Появится сообщение Please enter filename-->
+			cp "$binput"{,.bak}  <!--Проверка, есть ли такой файл в формате .bak-->
+			;;
+		"${options[4]}")  <!--Нажав 5-->
+			break  <!--Закрытие скрипта-->
+			;;
+		*)
+			echo 'Not a valid option.'  <!--Нажав что то кроме 1-5. Вывод сообщения Not a valid option-->
+			;;
+	esac
+done
