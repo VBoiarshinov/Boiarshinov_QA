@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R427</id>
+	<name>Test Run 12/4/2022 (Boiarshinov)</name>
+	<description></description>
+	<config></config>
+	<createdon>2022-12-04T17:00:19Z</createdon>
+		<completed>false</completed>
+		<milestone>V1</milestone>
+	<stats>
+										<passed>
+			<percent>80</percent>
+			<count>12</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>20</percent>
+			<count>3</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Shishkin</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Non-Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perfomance</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Гудим</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Функционал</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Нефункционал</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Нагрузочные тесты</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Driga</name>
+		<description>RomSanich</description>
+										<sections>
+		<section>
+		<name>functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>non-functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perfomance</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>kolesnikov</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Функционал</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Не функционал</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Нагрузочные тесты</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Безопасность</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Негативные тесты</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Calculator</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Boiarshinov</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional</name>
+		<description></description>
+						<tests>
+																																										<test>
+				<id>T65324</id>
+				<title>Копирование файла</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создание папки &quot;folder1&quot;.
+Создание папки &quot;folder2&quot;.
+Добавление 1 файлов в папку &quot;folder1&quot;.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файла для копирования</expected></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected></step>
+<step>
+<index>3</index><content>Выбираем один файл, который мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файл добавляется в список &quot;Files&quot; программы hardload</expected></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранного файла. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранный файл из папки &quot;folder1&quot; копируется в папку &quot;folder2&quot;</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3120</caseid>
+								<status>Passed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>102</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:18:52Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>102</elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файла для копирования</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Выбираем один файл, который мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файл добавляется в список &quot;Files&quot; программы hardload</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранного файла. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранный файл из папки &quot;folder1&quot; копируется в папку &quot;folder2&quot;</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T65325</id>
+				<title>Копирование нескольких файлов</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создание папки &quot;folder1&quot;.
+Создание папки &quot;folder2&quot;.
+Добавление 5 файлов в папку &quot;folder1&quot;.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файлов для копирования</expected></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected></step>
+<step>
+<index>3</index><content>Выбираем 5 файлов, которые мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файлы добавляются в список &quot;Files&quot; программы hardload</expected></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранных файлов. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранные файлы из папки &quot;folder1&quot; копируются в папку &quot;folder2&quot;</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3417</caseid>
+								<status>Passed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:19:58Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файлов для копирования</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Выбираем 5 файлов, которые мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файлы добавляются в список &quot;Files&quot; программы hardload</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранных файлов. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранные файлы из папки &quot;folder1&quot; копируются в папку &quot;folder2&quot;</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T65326</id>
+				<title>Копирование нескольких файлов разного формата</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создание папки &quot;folder1&quot;.
+Создание папки &quot;folder2&quot;.
+Добавление 5 файлов разного формата в папку &quot;folder1&quot;.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файлов для копирования</expected></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected></step>
+<step>
+<index>3</index><content>Выбираем 5 файлов, которые мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файлы добавляются в список &quot;Files&quot; программы hardload</expected></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранных файлов. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранные файлы из папки &quot;folder1&quot; копируются в папку &quot;folder2&quot;</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3419</caseid>
+								<status>Passed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>31</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:20:39Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>31</elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файлов для копирования</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Выбираем 5 файлов, которые мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файлы добавляются в список &quot;Files&quot; программы hardload</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранных файлов. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранные файлы из папки &quot;folder1&quot; копируются в папку &quot;folder2&quot;</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T65327</id>
+				<title>Копирование нескольких файлов разного размера</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создание папки &quot;folder1&quot;.
+Создание папки &quot;folder2&quot;.
+Добавление 5 файлов разного размера в папку &quot;folder1&quot;.
+Файлы 1КБ, 50Кб, 1Мб, 500Мб, 1Гб.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файлов для копирования</expected></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected></step>
+<step>
+<index>3</index><content>Выбираем 5 файлов, которые мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файлы добавляются в список &quot;Files&quot; программы hardload</expected></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранных файлов. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранные файлы из папки &quot;folder1&quot; копируются в папку &quot;folder2&quot;</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3420</caseid>
+								<status>Passed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>28</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:21:22Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>28</elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файлов для копирования</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Выбираем 5 файлов, которые мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файлы добавляются в список &quot;Files&quot; программы hardload</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранных файлов. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранные файлы из папки &quot;folder1&quot; копируются в папку &quot;folder2&quot;</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T65328</id>
+				<title>Удаление файла</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Выбираем файл который необходимо удалить. В строке нажимаем на путь к этому файлу, а не на &quot;галочку&quot;</content><expected>В окне &quot;Files&quot; фон выбранного файла стал синим.</expected></step>
+<step>
+<index>2</index><content>Нажимаем кнопку &quot;Х&quot; удалить выделенные файлы из списка</content><expected>Появляется окно &quot;Вопрос&quot; Удалить из списка? с вариантами &quot;Да&quot; и &quot;Нет&quot;</expected></step>
+<step>
+<index>3</index><content>Нажимаем кнопку &quot;Да&quot;</content><expected>Выбранный файл исчезает из окна &quot;Files&quot;</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3421</caseid>
+								<status>Passed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>39</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:22:23Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>39</elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Выбираем файл который необходимо удалить. В строке нажимаем на путь к этому файлу, а не на &quot;галочку&quot;</content><expected>В окне &quot;Files&quot; фон выбранного файла стал синим.</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>Нажимаем кнопку &quot;Х&quot; удалить выделенные файлы из списка</content><expected>Появляется окно &quot;Вопрос&quot; Удалить из списка? с вариантами &quot;Да&quot; и &quot;Нет&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Нажимаем кнопку &quot;Да&quot;</content><expected>Выбранный файл исчезает из окна &quot;Files&quot;</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T65329</id>
+				<title>Удаление нескольких файлов</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Выбираем файлы который необходимо удалить. В строке нажимаем на путь к этим файлам, а не на &quot;галочку&quot;</content><expected>В окне &quot;Files&quot; фон выбранных файлов стал синим.</expected></step>
+<step>
+<index>2</index><content>Нажимаем кнопку &quot;Х&quot; удалить выделенные файлы из списка</content><expected>Появляется окно &quot;Вопрос&quot; Удалить из списка? с вариантами &quot;Да&quot; и &quot;Нет&quot;</expected></step>
+<step>
+<index>3</index><content>Нажимаем кнопку &quot;Да&quot;</content><expected>Выбранные файлы исчезают из окна &quot;Files&quot;</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3422</caseid>
+								<status>Failed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>73</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:24:59Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>73</elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Выбираем файлы который необходимо удалить. В строке нажимаем на путь к этим файлам, а не на &quot;галочку&quot;</content><expected>В окне &quot;Files&quot; фон выбранных файлов стал синим.</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>2</index><content>Нажимаем кнопку &quot;Х&quot; удалить выделенные файлы из списка</content><expected>Появляется окно &quot;Вопрос&quot; Удалить из списка? с вариантами &quot;Да&quot; и &quot;Нет&quot;</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>3</index><content>Нажимаем кнопку &quot;Да&quot;</content><expected>Выбранные файлы исчезают из окна &quot;Files&quot;</expected><actual></actual><status>Failed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T65330</id>
+				<title>Остановка копирования</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файлов для копирования</expected></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected></step>
+<step>
+<index>3</index><content>Выбираем 5 файлов, которые мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файлы добавляются в список &quot;Files&quot; программы hardload</expected></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранных файлов. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранные файлы из папки &quot;folder1&quot; начинают копироваться в папку &quot;folder2&quot;</expected></step>
+<step>
+<index>6</index><content>Нажимаем кнопку пауза &quot;II&quot; остановить грузить</content><expected>Выбранные файлы из папки &quot;folder1&quot; перестают копироваться в папку &quot;folder2&quot;</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3423</caseid>
+								<status>Passed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>77</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:26:42Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>77</elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файлов для копирования</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Выбираем 5 файлов, которые мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файлы добавляются в список &quot;Files&quot; программы hardload</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранных файлов. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранные файлы из папки &quot;folder1&quot; начинают копироваться в папку &quot;folder2&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>6</index><content>Нажимаем кнопку пауза &quot;II&quot; остановить грузить</content><expected>Выбранные файлы из папки &quot;folder1&quot; перестают копироваться в папку &quot;folder2&quot;</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T65335</id>
+				<title>Копирование файла на другой локальный диск</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создание папки &quot;folder1&quot;.
+Создание папки &quot;folder2&quot; на другом локальном диске.
+Добавление 1 файлов в папку &quot;folder1&quot;.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файла для копирования</expected></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected></step>
+<step>
+<index>3</index><content>Выбираем один файл, который мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файл добавляется в список &quot;Files&quot; программы hardload</expected></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранного файла. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы на другом локальном диске, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранный файл из папки &quot;folder1&quot; копируется в папку &quot;folder2&quot; на другом локальном диске</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3428</caseid>
+								<status>Passed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>29</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:27:20Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>29</elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файла для копирования</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Выбираем один файл, который мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файл добавляется в список &quot;Files&quot; программы hardload</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранного файла. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы на другом локальном диске, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранный файл из папки &quot;folder1&quot; копируется в папку &quot;folder2&quot; на другом локальном диске</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T65336</id>
+				<title>Копирование файла на Flash накопитель</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создание папки &quot;folder1&quot;.
+Подключение Flash накопителя.
+Создание папки &quot;folder2&quot; на Flash накопителе.
+Добавление 1 файлов в папку &quot;folder1&quot;.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файла для копирования</expected></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected></step>
+<step>
+<index>3</index><content>Выбираем один файл, который мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файл добавляется в список &quot;Files&quot; программы hardload</expected></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранного файла. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; на Flash накопителе куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранный файл из папки &quot;folder1&quot; копируется в папку &quot;folder2&quot; на Flash накопителе</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3429</caseid>
+								<status>Passed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>25</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:27:53Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>25</elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файла для копирования</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Выбираем один файл, который мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файл добавляется в список &quot;Files&quot; программы hardload</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранного файла. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; на Flash накопителе куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранный файл из папки &quot;folder1&quot; копируется в папку &quot;folder2&quot; на Flash накопителе</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Non-Functional</name>
+		<description></description>
+						<tests>
+																																										<test>
+				<id>T65331</id>
+				<title>Проверка локализации интерфейса</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Low</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Запускаем программу hardload</content><expected>Программа открылась</expected></step>
+<step>
+<index>2</index><content>Проверяем все надписи интерфейса (RU)</content><expected>Все надписи интерфейса и всплывающие подсказки на одном языке (RU)</expected></step>
+<step>
+<index>3</index><content>Меняем язык Windows на (Eng). Запускаем программу hardload</content><expected>Программа открылась</expected></step>
+<step>
+<index>4</index><content>Проверяем все надписи интерфейса (Eng)</content><expected>Все надписи интерфейса и всплывающие подсказки на одном языке (Eng)</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3424</caseid>
+								<status>Failed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>12</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:29:07Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>12</elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Запускаем программу hardload</content><expected>Программа открылась</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>2</index><content>Проверяем все надписи интерфейса (RU)</content><expected>Все надписи интерфейса и всплывающие подсказки на одном языке (RU)</expected><actual></actual><status>Failed</status></step>
+<step>
+<index>3</index><content>Меняем язык Windows на (Eng). Запускаем программу hardload</content><expected>Программа открылась</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>4</index><content>Проверяем все надписи интерфейса (Eng)</content><expected>Все надписи интерфейса и всплывающие подсказки на одном языке (Eng)</expected><actual></actual><status>Failed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T65332</id>
+				<title>Проверка usability</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Запускаем программу hardload</content><expected>Программа открылась</expected></step>
+<step>
+<index>2</index><content>Проверяем интерфейс программы на логичность, удобство использования, понятен ли интерфейс интуитивно</content><expected>Программа удобна, логична и интуитивно понятна</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3425</caseid>
+								<status>Passed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>17</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:29:37Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>17</elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Запускаем программу hardload</content><expected>Программа открылась</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>Проверяем интерфейс программы на логичность, удобство использования, понятен ли интерфейс интуитивно</content><expected>Программа удобна, логична и интуитивно понятна</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T65338</id>
+				<title>Проверка орфографии в интерфейсе программы и всплывающих подсказках</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Запускаем программу hardload</content><expected>Программа открылась</expected></step>
+<step>
+<index>2</index><content>Проверяем все надписи интерфейса на орфографические ошибки (RU)</content><expected>Все надписи интерфейса и всплывающие подсказки без ошибок (RU)</expected></step>
+<step>
+<index>3</index><content>Нажимаем кнопку переключения языков</content><expected>Выпадает список доступных языков</expected></step>
+<step>
+<index>4</index><content>Выбираем (Eng)</content><expected>Все надписи интерфейса и всплывающие подсказки на одном языке (Eng)</expected></step>
+<step>
+<index>5</index><content>Проверяем все надписи интерфейса на орфографические ошибки (Eng)</content><expected>Все надписи интерфейса и всплывающие подсказки без ошибок (Eng)</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3431</caseid>
+								<status>Failed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>13</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:31:36Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>13</elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Запускаем программу hardload</content><expected>Программа открылась</expected><actual></actual><status>Passed</status></step>
+<step>
+<index>2</index><content>Проверяем все надписи интерфейса на орфографические ошибки (RU)</content><expected>Все надписи интерфейса и всплывающие подсказки без ошибок (RU)</expected><actual></actual><status>Failed</status></step>
+<step>
+<index>3</index><content>Нажимаем кнопку переключения языков</content><expected>Выпадает список доступных языков</expected><actual></actual><status>Failed</status></step>
+<step>
+<index>4</index><content>Выбираем (Eng)</content><expected>Все надписи интерфейса и всплывающие подсказки на одном языке (Eng)</expected><actual></actual><status>Failed</status></step>
+<step>
+<index>5</index><content>Проверяем все надписи интерфейса на орфографические ошибки (Eng)</content><expected>Все надписи интерфейса и всплывающие подсказки без ошибок (Eng)</expected><actual></actual><status>Failed</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Perfomance</name>
+		<description></description>
+						<tests>
+																																										<test>
+				<id>T65333</id>
+				<title>Копирование большого количества файлов 100шт</title>
+												<template>Test Case (Steps)</template>
+																<type>Performance</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создание папки &quot;folder1&quot;.
+Создание папки &quot;folder2&quot;.
+Добавление 100 файлов в папку &quot;folder1&quot;.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файлов для копирования</expected></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected></step>
+<step>
+<index>3</index><content>Выбираем 100 файлов, которые мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файлы добавляются в список &quot;Files&quot; программы hardload</expected></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранных файлов. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранные файлы из папки &quot;folder1&quot; копируются в папку &quot;folder2&quot;</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3426</caseid>
+								<status>Passed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>9</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:31:58Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>9</elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файлов для копирования</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Выбираем 100 файлов, которые мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файлы добавляются в список &quot;Files&quot; программы hardload</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранных файлов. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранные файлы из папки &quot;folder1&quot; копируются в папку &quot;folder2&quot;</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T65334</id>
+				<title>Копирование нескольких файлов большого объема 10Гб</title>
+												<template>Test Case (Steps)</template>
+																<type>Performance</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Создание папки &quot;folder1&quot;.
+Создание папки &quot;folder2&quot;.
+Добавление 10 файлов объемом 10Гб в папку &quot;folder1&quot;.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файлов для копирования</expected></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected></step>
+<step>
+<index>3</index><content>Выбираем 10 файлов по 10Гб, которые мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файлы добавляются в список &quot;Files&quot; программы hardload</expected></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранных файлов. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранные файлы из папки &quot;folder1&quot; копируются в папку &quot;folder2&quot;</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3427</caseid>
+								<status>Passed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>6</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:32:11Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>6</elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файлов для копирования</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Выбираем 10 файлов по 10Гб, которые мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файлы добавляются в список &quot;Files&quot; программы hardload</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранных файлов. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранные файлы из папки &quot;folder1&quot; копируются в папку &quot;folder2&quot;</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T65337</id>
+				<title>Копирование файла с названием в 256 символов</title>
+												<template>Test Case (Steps)</template>
+																<type>Performance</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Форматируем файловую систему в NTFS.
+Создание папки &quot;folder1&quot;.
+Создание папки &quot;folder2&quot;.
+Добавление 1 файлов в папку &quot;folder1&quot; с количеством символов в названии 256.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файла для копирования</expected></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected></step>
+<step>
+<index>3</index><content>Выбираем один файл, который мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файл добавляется в список &quot;Files&quot; программы hardload</expected></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранного файла. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранный файл с количеством символов в названии 256 из папки &quot;folder1&quot; копируется в папку &quot;folder2&quot;</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3430</caseid>
+								<status>Passed</status>
+																<assignedto>idoneronin@gmail.com</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>11</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-12-04T18:32:34Z</createdon>
+																		<createdby>idoneronin@gmail.com</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>11</elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<index>1</index><content>Нажать кнопку &quot;...&quot; Найти и добавить файл в список</content><expected>Откроется окно &quot;choose file&quot; с выбором файла для копирования</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>2</index><content>В окне &quot;choose file&quot; переходим в папку &quot;folder1&quot;</content><expected>Открывается папка &quot;folder1&quot; с заготовленными заранее файлами</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>3</index><content>Выбираем один файл, который мы намереваемся копировать. Нажимаем кнопку &quot;Открыть&quot;</content><expected>Файл добавляется в список &quot;Files&quot; программы hardload</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>4</index><content>В окне &quot;Files&quot; ставим галочку напротив выбранного файла. Нажимаем &quot;...&quot; в правом нижнем углу программы hardload</content><expected>Открывается &quot;Обзор папок&quot;</expected><actual></actual><status>Untested</status></step>
+<step>
+<index>5</index><content>Выбираем папку &quot;folder2&quot; куда мы намереваемся копировать файлы, нажимаем &quot;Ok&quot;. Нажимаем кнопку &quot;Плей&quot;</content><expected>Выбранный файл с количеством символов в названии 256 из папки &quot;folder1&quot; копируется в папку &quot;folder2&quot;</expected><actual></actual><status>Untested</status></step>
+</step_results>
+													</custom>
+											</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+		<section>
+		<name>Erofeeva</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Нефункциональные тесты</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Non functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Performance</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Нефункциональные тесты</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Автомат с напитками</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Калькулятор</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Hardload</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Функциональные тесты</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Позитивные</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Негативные</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Тесты безопасности</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Нефункциональные тесты</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+			</section>
+		<section>
+		<name>Ryazanov</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Функциональные</name>
+		<description></description>
+									</section>
+		<section>
+		<name>не функциональные</name>
+		<description></description>
+									</section>
+		<section>
+		<name>нагрузочные</name>
+		<description></description>
+									</section>
+		<section>
+		<name>calculator</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Хлупина</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Non Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perfomance</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Calculator</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+			</section>
+		<section>
+		<name>Katkov</name>
+		<description>&gt;_&lt;</description>
+										<sections>
+		<section>
+		<name>Non-Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perfomance</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Кovrik</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Не функциональные тесты.</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Функциональные тесты</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Нагрузочные тесты.</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>VendorMachine</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Базовые тесты.</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Тесты средней важности.</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Тесты критической важности.</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+			</section>
+</sections>
+			</section>
+		<section>
+		<name>Calculator</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Davidov V</name>
+		<description>Section of Davidov Vladislav</description>
+										<sections>
+		<section>
+		<name>HardLoad tests</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Non Functional tests</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Calculator</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Kristina</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Non Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perfomance</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Shandalova</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>func</name>
+		<description></description>
+									</section>
+		<section>
+		<name>nofunc</name>
+		<description></description>
+									</section>
+		<section>
+		<name>perf</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>CALCUTALOR</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Calculator</name>
+		<description></description>
+									</section>
+</sections>
+</run>
