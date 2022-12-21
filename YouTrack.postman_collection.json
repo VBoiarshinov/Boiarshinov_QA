@@ -1,26 +1,25 @@
 {
 	"info": {
-		"_postman_id": "d845f0c8-dc48-4aca-8d93-c9706c129265",
-		"name": "YouTrack Copy",
+		"_postman_id": "c918b6ec-da14-4736-9df2-2bf8a4edb422",
+		"name": "YouTrack",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "23887215"
 	},
 	"item": [
 		{
-			"name": "projects",
+			"name": "Projects",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Проверка ответа сервера 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"set project_id\", function () {\r",
+							"pm.test(\"Получение ID проекта\", function () {\r",
 							"var jsonData = pm.response.json();\r",
-							"\r",
-							"pm.collectionVariables.set(\"project_id\", jsonData[0].id);\r",
+							"pm.collectionVariables.set(\"project_id\", jsonData[1].id);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -31,7 +30,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}api/admin/projects?fields=id,name,shortName&query=postman",
+					"raw": "{{url}}api/admin/projects?fields=id,name,shortName",
 					"host": [
 						"{{url}}api"
 					],
@@ -43,10 +42,6 @@
 						{
 							"key": "fields",
 							"value": "id,name,shortName"
-						},
-						{
-							"key": "query",
-							"value": "postman"
 						}
 					]
 				}
@@ -54,15 +49,16 @@
 			"response": []
 		},
 		{
-			"name": "new issue",
+			"name": "New Issues",
 			"event": [
 				{
 					"listen": "prerequest",
 					"script": {
 						"exec": [
 							"var rnd = Math.random();\r",
-							"pm.collectionVariables.set(\"summary\", \"Gudim\" + rnd);\r",
-							"pm.collectionVariables.set(\"description\", \"Gudim\" + rnd);\r",
+							"pm.collectionVariables.set(\"summary\", \"boiarshinov\" + rnd);\r",
+							"pm.collectionVariables.set(\"description\", \"boiarshinov\" + rnd);\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -72,12 +68,11 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Проверка ответа сервера 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"\r",
-							"pm.test(\"issue_id\", function () {\r",
+							"pm.test(\"ID задачи\", function () {\r",
 							"var jsonData = pm.response.json();\r",
 							"pm.collectionVariables.set(\"issue_id\", jsonData.id);\r",
 							"});"
@@ -91,7 +86,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"project\": {\r\n        \"id\": \"{{project_id}}\"\r\n    },\r\n    \"summary\": \"{{summary}}\",\r\n    \"description\":\"{{descriptiom}}\"\r\n}",
+					"raw": "{\r\n    \"project\": {\r\n        \"id\": \"{{project_id}}\"\r\n    },\r\n    \"summary\": \"{{summary}}\",\r\n    \"description\":\"{{description}}\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -111,23 +106,23 @@
 			"response": []
 		},
 		{
-			"name": "issue",
+			"name": "Issue",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Проверка ответа сервера 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Body matches string\", function () {\r",
+							"pm.test(\"Проверка заполнения description\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"description\"));\r",
-							"\r",
 							"});\r",
-							"pm.test(\"Your test name\", function () {\r",
-							"        var jsonData = pm.response.json();\r",
-							"        pm.expect(jsonData.summary).to.eql(pm.collectionVariables.get(\"summary\"));\r",
+							"\r",
+							"pm.test(\"Проверка заполнения summary\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.summary).to.eql(pm.collectionVariables.get(\"summary\"));\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -157,19 +152,19 @@
 			"response": []
 		},
 		{
-			"name": "assignee",
+			"name": "Assignee",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Проверка ответа сервера 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Your test name\", function () {\r",
+							"pm.test(\"Изменение исполнителя\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.customFields[3].value.login).to.eql(\"nikitra123@gmail.com\");\r",
+							"    pm.expect(jsonData.customFields[3].value.login).to.eql(\"jwh4davidik@gmail.com\");\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -181,10 +176,10 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"customFields\": [\r\n        { \"name\": \"Assignee\", \"$type\": \"SingleUserIssueCustomField\", \"value\": { \"login\": \"nikitra123@gmail.com\" } },\r\n        { \"name\": \"Priority\", \"$type\": \"SingleEnumIssueCustomField\", \"value\": { \"name\": \"Major\" } }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"customFields\": [\r\n        {\r\n            \"name\": \"Assignee\",\r\n            \"$type\": \"SingleUserIssueCustomField\",\r\n            \"value\": {\r\n                \"login\": \"jwh4davidik@gmail.com\"\r\n            }\r\n        },\r\n        {\r\n            \"name\": \"Priority\",\r\n            \"$type\": \"SingleEnumIssueCustomField\",\r\n            \"value\": {\r\n                \"name\": \"Major\"\r\n            }\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
-							"language": "javascript"
+							"language": "json"
 						}
 					}
 				},
@@ -214,10 +209,11 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Проверка ответа сервера 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
-							"pm.test(\"Your test name\", function () {\r",
+							"\r",
+							"pm.test(\"Проверка статуса задачи\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.customFields[2].value.name).to.eql(\"Submitted\");\r",
 							"});"
@@ -255,27 +251,25 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Проверка ответа сервера 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
-							"pm.test(\"Your test name\", function () {\r",
+							"\r",
+							"pm.test(\"Изменение статуса на In Progress\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.customFields[2].value.name).to.eql(\"Submitted\");\r",
-							"});"
+							"    pm.expect(jsonData.customFields[2].value.name).to.eql(\"In Progress\");\r",
+							"}); "
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"customFields\": [\r\n        { \"name\": \"Assignee\", \"$type\": \"SingleUserIssueCustomField\", \"value\": { \"login\": \"nikitra123@gmail.com\" } },\r\n        { \"name\": \"Priority\", \"$type\": \"SingleEnumIssueCustomField\", \"value\": { \"name\": \"Major\" } }\r\n        { \"name\": \"State\", \"$type\": \"SingleEnumIssueCustomField\", \"value\": { \"name\": \"Open\" } }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"customFields\": [\r\n        {\r\n            \"name\": \"State\",\r\n            \"$type\": \"StateIssueCustomField\",\r\n            \"value\": {\r\n                \"name\": \"In Progress\"\r\n            }\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
